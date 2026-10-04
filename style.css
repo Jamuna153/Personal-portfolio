@@ -1,0 +1,204 @@
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #1f6f8b;
+}
+
+/* ---------- header and nav ---------- */
+header {
+    background-color: #1f3a5f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.menu a:hover,
+.menu a.active {
+    border-bottom: 2px solid #f4b942;
+}
+
+/* ---------- main sections ---------- */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #1f3a5f;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* ---------- hero ---------- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    max-width: 100%;
+    background-color: #dde8f3;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f4b942;
+    color: #1f3a5f;
+}
+
+/* ---------- cards ---------- */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #d5dce6;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #1f6f8b;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin-left: 20px;
+}
+
+/* ---------- contact form ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #aab4c3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1f3a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f6f8b;
+}
+
+.thanks {
+    font-size: 20px;
+    color: #1f6f8b;
+}
+
+/* ---------- footer ---------- */
+footer {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer a {
+    color: #f4b942;
+}
+
+footer .small {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* ---------- phone ---------- */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
